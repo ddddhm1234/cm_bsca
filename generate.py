@@ -124,7 +124,7 @@ class GenerateSign():
             item["file"] = os.path.join(path, item["file"])
             if not os.path.exists(item["file"]) or not os.path.isfile(item["file"]):
                 raise FileNotFoundError("lib not exists, %s" % (item["file"], ))
-            
+
             _ = item["version"]
             i = 0
             while i < len(_) and ((ord(_[i]) >= 48 and ord(_[i]) <= 57) or _[i] == '.'):
